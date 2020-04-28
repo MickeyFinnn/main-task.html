@@ -1,7 +1,13 @@
 h1 {
     position: absolute;
     top: 200px;
-    left: 300px;
+    left: 0px;
     width: 100%;
     color: white
     }
+  main {
+text-align: center;
+}
+header {
+    text-align: center;
+}
