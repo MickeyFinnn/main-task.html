@@ -1,11 +1,8 @@
-
-
 :root {
     font-family: 'Quicksand', sans-serif;
-    --main-color: white;
-    --accent-color: white;
-    scroll-behavior: smooth;
+    --main-color: #ffffff; --accent-color: #ffffff; scroll-behavior: smooth;
 }
+
 body {
     max-width: 100%;
     margin: auto;
@@ -14,37 +11,39 @@ body {
 h1 {
     position: absolute;
     width: 100%;
-    color: white;
+    color: #ffffff;
     text-align: center;
     font-family: Impact, fantasy;
-     font-size: 6rem;
-     top: 200px;
-    }
-  main { 
-text-align: center;
+    font-size: 6rem;
+    top: 200px;
 }
 
-header  {
+main {
+    text-align: center;
+}
+
+header {
     text-align: center;
     background-color: black;
+}
 
-       }
-       
-       header nav .reload-link {
-           font-family: Impact, fantasy;
-           font-size: 3rem;
-           text-decoration: none;
-           color: white;
-           text-align: center;
-           }
-       
-      header nav .top-menu {
+header nav .reload-link {
+    font-family: Impact, fantasy;
+    font-size: 3rem;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header nav .top-menu {
     background-color: black;
     display: flex;
     list-style-type: none;
     justify-content: flex-end;
     margin: 1rem 0;
 }
+
 header nav .top-menu li a {
     text-transform: uppercase;
     color: var(--main-color);
@@ -53,38 +52,72 @@ header nav .top-menu li a {
     padding: 5px;
 }
 
-header nav .top-menu li a:hover {
-    border: 1px solid var(--main-color);
-}
+@media (min-width: 500px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
 
     header nav .top-menu {
         flex: 1;
         margin: 0;
     }
-    
-    header section .header-photo {
-        width: 100%;
+}
+
+header nav .top-menu li a:hover {
+    border: 1px solid var(--main-color);
+}
+
+header section .header-photo {
+    width: 100%;
+}
+
+header .photo-banner {
+    background-image: url(../img/dodge.jpeg);
+    min-height: 850px;
+    width: 100%;
+    background-size: cover;
+    filter: brightness(50%);
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (min-width: 500px) {
+    header .photo-banner {
+        display: flex;
+        align-items: center;
     }
-   
-   .button {
-       position: relative;
-    display: inline-block;
-    padding: 0.35em 1.2em;
-    border: 0.1em solid black;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-weight: 300;
-    color: #FFFFFF;
-    text-align: center;
-    transition: all 0.7s;
-    background-color: transparent;
-    top: ;
-}
-   
-.button:hover {
-    color: white;
-    background-color: black;
-    cursor: pointer;
-}
+
+    header nav .top-menu {
+        flex: 1;
+        margin: 0;
+    }
+
+    .button {
+        position: relative;
+        display: inline-block;
+        padding: 0.35em 1.2em;
+        border: 0.1em solid black;
+        margin: 0 0.3em 0.3em 0;
+        border-radius: 0.12em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-weight: 300;
+        color: #ffffff;
+        text-align: center;
+        transition: all 0.7s;
+        background-color: #0253ff;
+        top: -200px ;
+        height: 50px;
+        width: 100px;
+    }
+
+    .button:hover {
+        color: white;
+        background-color: black;
+        cursor: pointer;
+    }
