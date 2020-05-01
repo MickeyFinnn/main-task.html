@@ -53,9 +53,11 @@ header nav .top-menu li a {
     text-decoration: none;
     border: 1px solid transparent;
     padding: 5px;
-    
-    
 }
+
+header nav .top-menu li a:hover {
+    border: 1px solid var(--main-color);
+    }
 
 @media (min-width: 882px) {
     header nav {
