@@ -114,9 +114,9 @@ header .photo-banner {
         position: relative;
         display: inline-block;
         padding: 0.35em 1.2em;
-        border: 0.1em solid black;
+        border: 0.0em solid black;
         margin: 0 0.3em 0.3em 0;
-        border-radius: 0.12em;
+        border-radius: 0.77em;
         box-sizing: border-box;
         text-decoration: none;
         font-weight: 300;
