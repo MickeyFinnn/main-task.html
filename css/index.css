@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-position: absolute;
+    position: absolute;
     z-index: 1000;
     width: 100%;
     color: #ffffff;
@@ -18,12 +18,11 @@ position: absolute;
     font-size: 6rem;
     top: 330px;
 }
+
 .name-page {
-     display: flex;
+    display: flex;
     flex-direction: column;
     left: 0px;
-}
-
 }
 
 header {
@@ -32,7 +31,7 @@ header {
 }
 
 header nav .reload-link {
-    margin:10px;
+    margin: 10px;
     font-family: Impact, fantasy;
     font-size: 3rem;
     text-decoration: none;
@@ -41,9 +40,6 @@ header nav .reload-link {
     justify-content: flex-start;
 }
 
-
-
-
 header .photo-banner {
     background-image: url(../img/dodge.jpeg);
     min-height: 850px;
@@ -51,97 +47,84 @@ header .photo-banner {
     background-size: cover;
     filter: brightness(50%);
     background-position: top;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   
 }
 
 @media (min-width: 100px) {
     header .photo-banner {
         display: flex;
         align-items: center;
-        
     }
-
-
-    .button {
-        position: relative;
-        display: inline-block;
-        padding: 0.35em 1.2em;
-        border: 0.0em solid black;
-        margin: 0 0.3em 0.3em 0;
-        border-radius: 0.78em;
-        box-sizing: border-box;
-        text-decoration: none;
-        font-weight: 300;
-        color: white;
-        text-align: center;
-        transition: all 0.7s;
-        background-color: #0253ff;
-        top: -200px ;
-        height: 50px;
-        width: 100px;
-    }
-
-    .button:hover {
-        color: white;
-        background-color: black;
-        cursor: pointer;
-    }
-
-main .about {
-  text-align: center; 
-  font-size: 20px;
-}
-main .services {
-   text-align: center;
 }
 
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.0em solid black;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.78em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    transition: all 0.7s;
+    background-color: #0253ff;
+    top: -200px ;
+    height: 50px;
+    width: 100px;
+}
+
+.button:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
 
 * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  
-
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 ul {
-  display: flex;
-  align-items: center;
-  height: 50px;
-  justify-content: flex-end;
-  font-family: Bradley Hand, cursive,;
-   font-size: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: flex-end;
+    font-family: Bradley Hand, cursive,;
+    font-size: 20px;
 }
 
 ul a {
-  margin-left: 10px;
-  color: white;
-
+    margin-left: 10px;
+    color: white;
+    
 }
 
+ul a:hover {
+    color: #0253ff;
 }
- ul a:hover { 
-     border: 1px solid grey;
-     color:#0253ff;
-    
- }
-@media (max-width:640px) {
-  .top-menu {
-    display: none;
-  }
-  .trigger {
-    display: inline-block;
-    margin-top: 4px;
-    cursor: pointer;
-    
-  }
-  .trigger i {
+
+
+@media (max-width: 640px) {
+    .top-menu {
+        display: none;
+    }
+
+    .trigger {
+        display: inline-block;
+        margin-top: 4px;
+        cursor: pointer;
+    }
+
+
+.trigger i {
     display: block;
     width: 30px;
     height: 6px;
@@ -149,104 +132,129 @@ ul a {
     margin-left: 450px;
     top: 200px;
     background: white;
-    
-  }
-  .show {
-    display: block;
-    position: ;
-  }
-  ul a {
-  margin-left: 350px;
-  z-index: 10000;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin: 4px auto;
-  border: 4px double grey; 
-    background: grey; 
-    padding: 5px; 
-}
-}
-ul a:hover { 
-     color:#0253ff;
-}
-@media (max-width:500px) {
-  .top-menu {
-    display: none;
+ }
 
-  }
-  .trigger {
-    display: inline-block;
-    margin-top: 4px;
-    cursor: pointer;
-    
-  }
-  .trigger i {
+.show {
     display: block;
-    width: 30px;
-    height: 6px;
-    margin: 4px auto;
+   }
+ 
+
+ul a {
     margin-left: 350px;
-    top: 200px;
-    background: white;
-    
-  }
-  .show {
-    display: block;
-  }
-  ul a {
-  margin-left: 350px;
-  z-index: 10000;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin: 4px auto;
-  border: 4px double grey; 
-    background: grey; 
-    padding: 5px; 
-  }
-  ul a:hover { 
-     color:#0253ff;
-}
-@media (max-width:400px) {
-  .top-menu {
-    display: none;
-
-  }
-  .trigger {
-    display: inline-block;
-    margin-top: 4px;
-    cursor: pointer;
-    
-  }
-  .trigger i {
-    display: block;
-    width: 30px;
-    height: 6px;
+    z-index: 10000;
+    position: relative;
+    display: flex;
+    justify-content: center;
     margin: 4px auto;
-    margin-left: 270px;
-    top: 200px;
-    background: white;
-    
-  }
-  .show {
-    display: block;
-  }
-  ul a:hover {
-  margin-left: 350px;
-  z-index: 10000;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin: 4px auto;
-  border: 4px double grey; 
-    background: grey; 
-    padding: 5px; 
-  }
-  ul a:hover { 
-     color:#0253ff;
+    padding: 5px;
+    border: 4px double grey;
+            background: grey;
+ }
+
+ul a:hover {
+    color: #0253ff;
+ }
+}
+@media (max-width: 500px) {
+    .top-menu {
+        display: none;
+    }
+
+    .trigger {
+        display: inline-block;
+        margin-top: 4px;
+        cursor: pointer;
+    }
+
+    .trigger i {
+        display: block;
+        width: 30px;
+        height: 6px;
+        margin: 4px auto;
+        margin-left: 350px;
+        top: 200px;
+        background: white;
+    }
+
+    .show {
+        display: block;
+        
+    }
+
+    ul a {
+        margin-left: 350px;
+        z-index: 10000;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: 4px auto;
+        padding: 5px;
+        border: 4px double grey;
+            background: grey;
+    }
+
+    ul a:hover {
+        color: #0253ff;
+    }
 }
 
+    @media (max-width: 400px) {
+        .top-menu {
+            display: none;
+        }
 
+        .trigger {
+            display: inline-block;
+            margin-top: 4px;
+            cursor: pointer;
+        }
+      .trigger i {
+            display: block;
+            width: 30px;
+            height: 6px;
+            margin: 4px auto;
+            margin-left: 270px;
+            top: 200px;
+            background: white;
+        }
 
+        .show {
+            display: block;
+        }
+        ul a:hover {
+            margin-left: 350px;
+            z-index: 10000;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin: 4px auto;
+            padding: 5px;
+              border: 4px double grey;
+            background: grey;
+        }
 
+        ul a:hover {
+            color: #0253ff;
+              border: 4px double grey;
+            background: grey;
+        }
+    }
+        
+
+        main .about {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        main .services {
+            text-align: center;
+        }
+
+        main .halloffame {
+            text-align: center;
+        }
+
+        main .carusel-css {
+            max-width: 500px;
+            margin: auto;
+        }
