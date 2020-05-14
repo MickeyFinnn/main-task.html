@@ -94,23 +94,21 @@ header .photo-banner {
 
 ul {
     display: flex;
-    align-items: center;
     height: 50px;
     justify-content: flex-end;
     font-family: Bradley Hand, cursive,;
     font-size: 20px;
+    margin-left: auto;
 }
 
 ul a {
     margin-left: 10px;
     color: white;
-    
 }
 
 ul a:hover {
     color: #0253ff;
 }
-
 
 @media (max-width: 640px) {
     .top-menu {
@@ -123,38 +121,37 @@ ul a:hover {
         cursor: pointer;
     }
 
+    .trigger i {
+        display: block;
+        width: 30px;
+        height: 6px;
+        margin: 4px auto;
+        margin-left: 450px;
+        top: 200px;
+        background: white;
+    }
 
-.trigger i {
-    display: block;
-    width: 30px;
-    height: 6px;
-    margin: 4px auto;
-    margin-left: 450px;
-    top: 200px;
-    background: white;
- }
+    .show {
+        display: block;
+    }
 
-.show {
-    display: block;
-   }
- 
+    ul a {
+        margin-left: 350px;
+        z-index: 10000;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: 4px auto;
+        padding: 5px;
+        border: 4px double grey;
+        background: grey;
+    }
 
-ul a {
-    margin-left: 350px;
-    z-index: 10000;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: 4px auto;
-    padding: 5px;
-    border: 4px double grey;
-            background: grey;
- }
-
-ul a:hover {
-    color: #0253ff;
- }
+    ul a:hover {
+        color: #0253ff;
+    }
 }
+
 @media (max-width: 500px) {
     .top-menu {
         display: none;
@@ -178,7 +175,6 @@ ul a:hover {
 
     .show {
         display: block;
-        
     }
 
     ul a {
@@ -190,7 +186,7 @@ ul a:hover {
         margin: 4px auto;
         padding: 5px;
         border: 4px double grey;
-            background: grey;
+        background: grey;
     }
 
     ul a:hover {
@@ -198,63 +194,253 @@ ul a:hover {
     }
 }
 
-    @media (max-width: 400px) {
-        .top-menu {
-            display: none;
-        }
-
-        .trigger {
-            display: inline-block;
-            margin-top: 4px;
-            cursor: pointer;
-        }
-      .trigger i {
-            display: block;
-            width: 30px;
-            height: 6px;
-            margin: 4px auto;
-            margin-left: 270px;
-            top: 200px;
-            background: white;
-        }
-
-        .show {
-            display: block;
-        }
-        ul a:hover {
-            margin-left: 350px;
-            z-index: 10000;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            margin: 4px auto;
-            padding: 5px;
-              border: 4px double grey;
-            background: grey;
-        }
-
-        ul a:hover {
-            color: #0253ff;
-              border: 4px double grey;
-            background: grey;
-        }
+@media (max-width: 400px) {
+    .top-menu {
+        display: none;
     }
-        
 
-        main .about {
-            text-align: center;
-            font-size: 20px;
-        }
+    .trigger {
+        display: inline-block;
+        margin-top: 4px;
+        cursor: pointer;
+    }
 
-        main .services {
-            text-align: center;
-        }
+    .trigger i {
+        display: block;
+        width: 30px;
+        height: 6px;
+        margin: 4px auto;
+        margin-left: 270px;
+        top: 200px;
+        background: white;
+    }
 
-        main .halloffame {
-            text-align: center;
-        }
+    .show {
+        display: block;
+    }
 
-        main .carusel-css {
-            max-width: 500px;
-            margin: auto;
-        }
+    ul a:hover {
+        margin-left: 350px;
+        z-index: 10000;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: 4px auto;
+        padding: 5px;
+        border: 4px double grey;
+        background: grey;
+    }
+
+    ul a:hover {
+        color: #0253ff;
+        border: 4px double grey;
+        background: grey;
+    }
+}
+
+main .about {
+    text-align: center;
+    font-size: 20px;
+}
+
+main .services {
+    text-align: center;
+    margin-top: 40px;
+}
+
+main .halloffame {
+    text-align: center;
+    margin-top: 40px;
+}
+
+main .carusel-css {
+    max-width: 500px;
+    margin: auto;
+}
+
+img#colisioncar {
+    height: 400px;
+}
+img#vinylcar {
+    height: 400px;
+}
+img#designcar {
+    height: 400px;
+}
+img#audiocar{
+    height: 400px;
+}
+img#cartuningcar{
+    height: 400px;
+}
+img#wheelscar{
+    height: 400px;
+}
+
+img#hall7car {
+    height: 630px;
+}
+.viewcars {
+    position: relative;
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.0em solid black;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.78em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    transition: all 0.7s;
+    background-color: #0253ff;
+    top: 25px ;
+    height: 50px;
+    width: 150px;
+}
+
+.viewcars:hover {
+    color: black;
+}
+
+main .products {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.wheelsphoto {
+    max-width: 350px;
+    height: 265px;
+    margin-left: 25px;
+}
+
+.lightsphoto {
+    max-width: 350px;
+    height: 265px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.externalphoto {
+    max-width: 350px;
+    margin: auto;
+}
+
+.wheelstext {
+    font-size: 25px;
+    color: blue;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 55px;
+}
+
+.wheelstextunder {
+    margin-left: 95px;
+}
+
+.lightstext {
+    font-size: 25px;
+    color: blue;
+    display: flex;
+    justify-content: center;
+}
+
+.lightstextunder {
+    margin-left: 67px;
+}
+
+.externaltext {
+    font-size: 25px;
+    color: blue;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 27px;
+}
+
+.externaltextunder {
+    margin-left: 54px;
+}
+
+.productsphoto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 1140px) {
+    .productsphoto {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+}
+
+.modernize {
+    background-image: url(../img/evolutionfooter.jpg);
+    background-color: blue;
+    opacity: 0.6;
+    min-height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+}
+
+.modernize_h {
+    text-align: center;
+}
+
+.modernizeheader {
+    position: relative;
+    bottom: 350px;
+    font-size: 62px;
+    color: white;
+}
+
+.letstalk {
+    position: relative;
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.0em solid black;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.78em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    transition: all 0.7s;
+    background-color: black;
+    text-decoration: none;
+    top: -300px;
+    height: 50px;
+    width: 129px;
+}
+
+.letstalk:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.lvivcustoms {
+    background-color: black;
+    max-width: 100%;
+    margin-top: -138px;
+    height: 100%;
+}
+
+.customimgdown {
+    max-width: 80%;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 150px;
+}
+
+.lvivcustomheaderdown {
+    color: #ffffff;
+    text-align: center;
+    font-family: Impact, fantasy;
+    font-size: 6rem;
+}
+
