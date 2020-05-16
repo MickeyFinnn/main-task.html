@@ -378,6 +378,7 @@ main .products {
 
 .modernize {
     background-image: url(../img/evolutionfooter.jpg);
+    background-attachment: fixed;
     background-color: blue;
     opacity: 0.6;
     min-height: 500px;
@@ -415,11 +416,12 @@ main .products {
     top: -300px;
     height: 50px;
     width: 129px;
+    
 }
 
 .letstalk:hover {
     color: white;
-    background-color: black;
+    background-color: grey;
     cursor: pointer;
 }
 
@@ -429,12 +431,16 @@ main .products {
     margin-top: -138px;
     height: 100%;
 }
-
+.customimgbox{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+   
+}
 .customimgdown {
+    display: block;
     max-width: 80%;
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-bottom: 150px;
+    max-height: 550px;
 }
 
 .lvivcustomheaderdown {
@@ -444,3 +450,118 @@ main .products {
     font-size: 6rem;
 }
 
+.discount {
+    text-align: center;
+}
+
+.timercutdownbox {
+    display: flex;
+    justify-content: center;
+}
+.timercutdown {
+    border: 1px solid black;
+    border-radius: 20px;
+    border-width: 10px;
+    font-size: 30px;
+    width: 700px;
+    position: relative;
+}
+
+.discounth2 {
+    margin: 25px;
+    font-weight: bold;
+}
+.discounttext {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.dealbutton {
+    position: relative;
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.0em solid black;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.78em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    text-align: center;
+    transition: all 0.7s;
+    background-color: #0253ff;
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+}
+.hrefdeal { text-decoration: none;
+color: white;
+}
+.dealbutton:hover{
+    background-color:black ;
+}
+
+.partners {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.partnersimgbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partners img {
+    display: block;
+    max-height: 300px;
+}
+.partners .arrow-container-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partners .arrow-left {
+    cursor: pointer;
+}
+.partners .arrow-left:hover {
+    font-weight: bold;
+}
+.ferrariimg {
+    max-height: 200px;
+}
+.partners-text {
+    text-align: center;
+    margin: 25px;
+}
+.partners-h2 {
+    margin: 25px;
+}
+.arrow-left {
+    color: white;
+    background-color: #0253ff;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 100px;
+}
+
+.textimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+}
+.textimonials-grid img { 
+    display: block;
+    max-width: 250px;
+    max-height: 250px;
+    margin-left: 300px;
+    margin-top: 40px;
+}
+.textimonials-grid p { 
+    display: block;
+    max-width: 450px;
+    max-height: 300px;
+    margin: 40px;
+}
+.testimonials-h2 {
+    display: flex;
+    justify-content: center;
+}
