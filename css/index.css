@@ -7,7 +7,11 @@ body {
     max-width: 1140px;
     margin: auto;
 }
-
+@media (max-width: 320px) {
+    body {
+        margin-left: auto;
+    }
+}
 h1 {
     position: absolute;
     z-index: 1000;
@@ -59,7 +63,14 @@ header .photo-banner {
         align-items: center;
     }
 }
-
+@media (max-width: 400px) {
+    .name-page {
+        font-size: 4rem;
+    }
+    .button {
+        top: -300px;
+    }
+}
 .button {
     position: relative;
     display: inline-block;
@@ -74,7 +85,7 @@ header .photo-banner {
     text-align: center;
     transition: all 0.7s;
     background-color: #0253ff;
-    top: -200px ;
+    top: -242px ;
     height: 50px;
     width: 100px;
 }
@@ -514,6 +525,11 @@ color: white;
     display: block;
     max-height: 300px;
 }
+@media (max-width: 500px) {
+    .partners img { max-width:250px;
+        max-width: 266px;
+    }
+}
 .partners .arrow-container-left {
     display: flex;
     align-items: center;
@@ -541,18 +557,18 @@ color: white;
     border: 2px solid black;
     border-radius: 25px;
     width: 100px;
+    margin-bottom: 10px;
 }
 
 .textimonials-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr 1fr ;
 }
 .textimonials-grid img { 
     display: block;
     max-width: 250px;
     max-height: 250px;
-    margin-left: 300px;
     margin-top: 40px;
 }
 .textimonials-grid p { 
@@ -562,6 +578,256 @@ color: white;
     margin: 40px;
 }
 .testimonials-h2 {
+    text-align: center;
+}
+.testimonials {
     display: flex;
     justify-content: center;
+}
+@media(max-width: 520px) {
+    .textimonials-grid {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.testimonials-head {
+    font-size: 20px;
+    font-weight: bold;
+}
+.testimonial-name-car {
+    font-weight: inherit;
+    color: #0253ff;
+}
+.upgradesimg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.upgradesimg img {
+    display: block;
+    max-width: 340px;
+    max-height: 250px;
+    margin: 17px;
+}
+@media (max-width: 1122px) {
+    .upgradesimg {
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    }
+}
+@media (max-width: 750px) {
+    .upgradesimg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.upgrades-text {
+    text-align: center;
+    margin: 40px;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.maininformation {
+    background-position-y: 56px;
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    max-height: 574px;
+}
+.formtocontactus{
+    text-align: end;
+}
+.map {
+    max-width: 407px;
+    max-height: 207px;
+    bottom: 12px;
+    position: relative;
+}
+.contacts {
+        position: relative;
+        left: 45px;
+}
+.contacthead {
+    position: relative;
+    color:whitesmoke;
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+    left: 59px;
+}  
+.adressname {   
+    color:whitesmoke ;
+    font-weight:bold;   
+}
+.questioncontact {   
+    color:wheat ;
+    font-weight:bold;
+    
+}
+.adresswhere {   
+    color:wheat ;
+    font-weight:bold;
+    
+}
+.hoursofwork {    
+    color:whitesmoke ;
+    font-weight:bold;
+    
+}
+.time {    
+    color:wheat ;
+    font-weight:bold;
+    
+}
+.contactinform {    
+    color:whitesmoke ;
+    font-weight:bold;
+    
+}
+.emailandphone {
+    color:wheat ;
+    font-weight:bold;
+    
+}
+.formtocontactus{
+position: relative;
+    top: -471px;
+    left: -49px;
+}
+
+.formtocontactus {
+    background: grey;
+    align-self: end;
+    max-width: 381px;
+    position: relative;
+    left: 569px;
+    height: 463px;
+    top: -507px;
+    border-radius: 25px;
+}
+.threeinputs {
+    position: relative;
+    left: -95px;
+    top: 27px;
+    border-radius: 25px;
+}
+.textarea {
+    position: relative;
+    left: -23px;
+    top: 37px;
+    border-radius: 25px;
+    text-align: center;
+}
+.submit {
+    left: -148px;
+    position: relative;
+    top: 26px;
+    border-radius: 25px;
+    background-color: orangered;
+    border: 3px solid black;
+    color: white;
+    width: 100px;
+}
+.submit:hover {
+background-color: black;
+}
+.inputone {
+    border-radius: 25px;
+    text-align: center;
+}
+.footernavigation {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    font-family: Bradley Hand, cursive,;
+    font-size: 20px;
+    margin-left: auto;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: transparent;
+}
+.footernavigation a {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
+.footernavigation:hover {
+   color:grey;
+}
+.logoforcontact {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    font-family: Bradley Hand, cursive,;
+    font-size: 20px;
+    margin-left: auto;
+}
+footer {
+    background: black;
+}
+.fackebooklogo {
+    border-radius: 30px;
+    max-width: 40px;
+}
+
+.instagramlogo{
+    border-radius: 30px;
+    max-width: 40px;
+}
+
+.telegramlogo{
+    border-radius: 30px;
+    max-width: 40px;
+}
+@media(max-width: 980px) {
+    .maininformation {
+        position: relative;
+    max-height: 1040px;
+    }
+    .formtocontactus {
+        position: relative;
+        top: -6px;
+        left: 16px;
+    }
+}
+@media(max-width: 430px) {
+    .maininformation {
+        position: relative;
+    max-height: 1040px;
+    position: relative;
+    max-height: 1040px;
+    max-width: 409px;
+    }
+    .formtocontactus {
+        position: relative;
+        top: -6px;
+        left: 16px;
+        max-width: 362px;
+    }
+    .threeinputs {
+        position: relative;
+        left: -77px;
+    }
+    .textarea {
+        max-width: 295px;
+    }
+    .map {
+        max-width: 377px;
+        position: relative;
+        left:18px;
+}
+.submit {
+    position: relative;
+    left: -123px;
+}
+}
+@media (max-width: 400px) {
+    body {
+        position: relative;
+        align-self: center;
+        left: 110px;
+        width: 408px;
+    }
 }

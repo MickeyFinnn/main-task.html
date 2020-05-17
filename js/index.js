@@ -54,4 +54,4 @@ document.querySelector('.arrow-left')
     img.src = imgArray[currImgidx]
   }  
     
-   
+  

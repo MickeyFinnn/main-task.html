@@ -256,15 +256,16 @@
 			<div class="textimonials-grid">
 				<img src="img/testimonials1.jpg" alt="Orange  retro chrysler magnum standing on the street">
 				<p>
-					Remarkable StyleChrysler Magnum I have always dreamed of redesigning my car, and
-					with the
-					helpof<br>
+					<span class="testimonials-head">Remarkable Style</span><br>
+					<span class="testimonial-name-car">Chrysler Magnum</span><br>
+					I have alwaysdreamed of redesigning my car, andwith thehelp of
 					Lviv Customs, it looks bothvintage and modern. Thank you for your work! Now I’m sure that I’ll<br>
 					become your life-long client, because you do pure magic with your hands and you know that,right?<br>
 				</p>
 				<img src="img/testimonials2.jpg" alt="Retro steering wheel of the crysler magnum inside the car">
 				<p>
-					Fast &Furious Chrysler MFast &Furious arauder<br>
+					<span class="testimonials-head">Fast &Furious</span><br>
+					<span class="testimonial-name-car">Chrysler Marauder</span><br>
 					Lviv Customs have done extraordinary work upgrading my car. They have modernized the engine,<br>
 					changed the gears, enhanced the transmission, and polished everything so now my good old<br>Chrysler
 					is
@@ -272,10 +273,10 @@
 
 				</p>
 				<img src="img/testimonials3.jpg" alt="Back part of the red Oldsmobile Toronado standing on the road">
-				Retro Car Renewal
+
 				<p>
-					Retro Car Renewal
-					Oldsmobile Toronado
+					<span class="testimonials-head">Car Renewal</span><br>
+					<span class="testimonial-name-car"> Toronado<br></span>
 					It’s quite hard to find a workshop that deals with retro cars. Lviv Customs have<br>
 					repaired every single broken part of my Thunderbird, and now I am driving it just like I<br>did 30
 					years
@@ -285,72 +286,86 @@
 				</p>
 			</div>
 		</div>
-		<div>
-			<h2>OUR LATEST UPGRADES</h2>
-			<img src="img/upgrades3.jpg" alt="Black chevrolet Camaro standing on the ground in the fog">
+		<div class="upgrades">
+			<h2 class="upgrades-text">OUR LATEST UPGRADES</h2>
+			<div class="upgradesimg">
+				<img src="img/upgrades1.jpg" alt="Silver Mercedes in the garage">
+				<img src="img/background.jpg" alt="white tuning subaru riding in the forest road">
+				<img src="img/upgrades3.jpg" alt="Black chevrolet Camaro standing on the ground in the fog">
+				<img src="img/upgrades5.jpeg" alt="Black Ford Mustang on the big parking">
+				<img src="img/upgrades4.jpg" alt="Old blac car with the closed lights">
+				<img src="img/upgrades6.jpg" alt="White sportcar on the ground">
+			</div>
 		</div>
 	</main>
-	<footer>
-		<div id="contacts">
-			<h2>CONTACTS</h2>
-			<p>If you want to upgrade your car, feel free to contact us.</p>
-			<table>
-				<tr>
-					<td>ADRESSNAME</td>
-					<td>Lviv,Schyretska street 31</td>
-				</tr>
-				<tr>
-					<td>HOURS</td>
-					<td>Mon-Fri: 8am-5:30pm</td>
-				</tr>
-				<tr>
-					<td>EMAIL AND MOBILE</td>
-					<td>380934673543 bilousovman@gmail.com</td>
-				</tr>
-			</table>
+	<div class="blackbacground">
+	<div class="maininformation">
+		<div class="contacts">
+			<h2 class="contacthead">CONTACTS</h2>
+			<p class="questioncontact">If you want to upgrade your car,<br> feel free to contact us.</p>
+
+
+			<p class="adressname">ADRESSNAME</p>
+			<p class="adresswhere">Lviv,Schyretska street 31</p>
+
+
+			<p class="hoursofwork">HOURS</p>
+			<p class="time">Mon-Fri: 8am-5:30pm</p>
+
+
+			<p class="contactinform">EMAIL AND MOBILE</p>
+			<p class="emailandphone">380934673543 bilousovman@gmail.com</p>
+
+
 		</div>
-		<iframe src="https://www.google.com/maps/d/embed?mid=1uK9nGDL309rWXm4D6aBEsCgGC-vDno8l" width="640"
+
+		<iframe class="map" src="https://www.google.com/maps/d/embed?mid=1uK9nGDL309rWXm4D6aBEsCgGC-vDno8l" width="640"
 			height="480"></iframe>
-		<div>
+
+		<div class="formtocontactus">
 			<form action=" https://formspree.io/mbjanbdb" method="POST">
-				<p>
-					<input type="text" required name="name" placeholder="Your name:">
+				<div class="threeinputs">
+				<p class="nameinp">
+					<input class="inputone" type="text" required name="name" placeholder="Your name:">
 				</p>
 				<p>
-					<input type="text" required name="phone" placeholder="Mobile number">
+					<input class="inputone" type="text" required name="phone" placeholder="Mobile number">
 				</p>
 				<p>
-					<input type="text" required name="email" placeholder="EMAIL">
+					<input class="inputone" type="text" required name="email" placeholder="EMAIL">
+				</p>
+				</div>
+				<p>
+					<textarea class="textarea" rows="10" cols="45" required name="comments" placeholder="Left a comment"></textarea>
 				</p>
 				<p>
-					<textarea rows="10" cols="45" required name="comments" placeholder="Left a comment"></textarea>
-				</p>
-				<p>
-					<input type="submit">
+					<input class="submit" type="submit">
 			</form>
 		</div>
-		<hr>
-		<div>
-			<nav>
-				<a href="index.html">LVIV CUSTOMS</a>
-				<a href="#about">About</a>
-				<a href="#services">Services</a>
-				<a href="#halloffame">Hall of fame</a>
-				<a href="#products">Products</a>
-				<a href="#contacts">Contacts</a>
-				<label>
+	</div>
+	</div>
+	<footer>
+	<div>
+		<nav>
+			<div class="footernavigation">
+			<a href="#services">Services</a>
+			<a href="#halloffame">Hall of fame</a>
+			<a href="#products">Products</a>
+			</div>
+			<footer>
+				<label class="logoforcontact">
 					<a href="https://www.facebook.com/MickeyBilousov">
-						<img src="img/facebooklogo.png" alt="Fackebook logo">
+						<img class="fackebooklogo"  src="img/facebooklogo.png" alt="Fackebook logo">
 					</a>
 					<a href="https://www.instagram.com/bilousov_mixal">
-						<img src="img/instagramlogo.jpg" alt="Instagram logo">
+						<img class="instagramlogo"  src="img/instagramlogo.jpg" alt="Instagram logo">
 					</a>
 					<a href="https://t.me/Mickey_Finn">
-						<img src="img/telegramlogo.jpg" alt="Telegram logo">
+						<img class="telegramlogo" src="img/telegramlogo.jpg" alt="Telegram logo">
 					</a>
 				</label>
-			</nav>
-		</div>
+		</nav>
+	</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -361,6 +376,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 		crossorigin="anonymous"></script>
+
 	<script src="js/index.js"></script>
 </body>
 
