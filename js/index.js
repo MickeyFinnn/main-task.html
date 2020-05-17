@@ -36,12 +36,12 @@ document.querySelector('.arrow-left')
 
 
   const imgArray = [
-    '../img/ford.jpg',
-    '../img/bmw.jpg',
-    '../img/tesla.jpg',
-    '../img/chevrolet.jpg',
-    '../img/yamaha.jpg',
-    '../img/ferrari.jpg'
+    'img/ford.jpg',
+    'img/bmw.jpg',
+    'img/tesla.jpg',
+    'img/chevrolet.jpg',
+    'img/yamaha.jpg',
+    'img/ferrari.jpg'
   ];
   let currImgidx = 0;
   
@@ -53,5 +53,5 @@ document.querySelector('.arrow-left')
     const img = document.querySelector('.partners img');
     img.src = imgArray[currImgidx]
   }  
-    
+
   
